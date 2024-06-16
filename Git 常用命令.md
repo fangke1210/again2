@@ -185,4 +185,4 @@ git reset --hard <提交ID>
 ### 查看文件提交历史
 
 ```
-git log -- <文件名>
+git log -- <文件名>·
