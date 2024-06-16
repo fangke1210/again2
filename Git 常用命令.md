@@ -109,7 +109,7 @@ git reset --mixed 文件hash    保留工作区的文件，不保留暂存区的
 ```markdown
 git init
 git remote add origin <远程仓库地址>
-git pull origin main  # 或者其他默认分支名，例如 master
+git pull origin master  # 或者其他默认分支名，例如 
 ```
 
 
@@ -123,6 +123,12 @@ git branch <分支名>
 git checkout <分支名>
 # 创建并切换到新分支
 git checkout -b <分支名>
+```
+
+### 强制拉取远程分支
+
+```markdown
+git reset --hard origin/main
 ```
 
 ### 合并分支
@@ -193,4 +199,4 @@ git reset --hard <提交ID>
 ### 查看文件提交历史
 
 ```
-git log -- <文件名>·
+git log -- <文件名>
