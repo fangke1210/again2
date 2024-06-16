@@ -86,22 +86,30 @@ git log -p -- <文件名>
 
 ```
 
-回退并保留更改（软重置）
+### 回退并保留更改（软重置）
 
 ```markdown
 git reset --soft  文件hash   保留工作区和暂存区的文件
 ```
 
-强制回退并丢弃更改（硬重置）
+### 强制回退并丢弃更改（硬重置）
 
 ```markdown
 git reset --hard  文件hash   不保留工作区和暂存区的文件。相当于一键还原
 ```
 
-混合回退
+### 混合回退
 
 ```markdown
 git reset --mixed 文件hash    保留工作区的文件，不保留暂存区的文件   默认参数写的时候 可以不写 --mixed
+```
+
+关联一个远程仓库	
+
+```markdown
+git init
+git remote add origin <远程仓库地址>
+git pull origin main  # 或者其他默认分支名，例如 master
 ```
 
 
